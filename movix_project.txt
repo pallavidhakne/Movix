@@ -1,0 +1,83 @@
+********************Movixx**************
+firstly we are using vite becuase vite is faster than reactjs 
+How faster ? 
+Ans : Vite is a build tool and development server for front-end projects.
+React is a JavaScript library for building user interfaces. It is not a build tool or a development server like Vite.
+
+/********* untils -> api.js ***********/
+Axios library is a popular JavaScript library for making HTTP requests.
+in this file we call api using .env file token 
+export fetchDataFromApi, which is a function that takes two parameters:
+ url and params. This function will be used to make HTTP GET requests to the TMDb API.
+
+/*********/
+when we write code in React.StrictMode then everythings calls twice becuase it's checking ki pahili bar jo response aa rha tha agalibar bhi same aa rha ki nhi
+
+/*** Store folder ****/ in this folder we store all the code related to redux store
+//redux ko use krne ke liye hame react me 2 package chahiye hote hai 1.redux-toolkit 2.react-redux
+//store nam ke folder me redux ka code likh denge store.js file me and usako use kr lenge main file provider ke sath
+<Provider store={store}>
+        <App />
+    </Provider> yese
+///*****homeSlice*****/
+In the file homeSlice -> the code  is an example of using Redux Toolkit to define a Redux slice, which includes the state, reducers, 
+and actions for managing a specific portion of the Redux store.
+
+export const { getApiConfiguration, getGenres } = homeSlice.actions; :- exporting actions
+
+//read again api call and redux store wala kam
+
+//now start writing code gor making website 
+//why scss is better than css
+ans:SCSS consists of more advanced features, and thus, it can perform more advanced functions. 
+A regular CSS language does not assign various nested rules. The SCSS language promotes rules that are properly nested
+contentWrapper :- we use contentWrapper for giving same kind of css to all element that's why we wrap all content in contentWrapper.
+HeroBanner:-welcome ,to big searchbar background image sabka code isame likha hai
+we are write normal code for making these mentioned thing and use hook->useFetch for background
+
+we can;t direct access image url so we need to store it ,for build image url we need 3 -data
+(base url,size and file_path)
+
+///Header file :-
+searchQueryHandler: Handles searching for movies or TV shows when the user presses the Enter key.
+openSearch: Opens the search bar.
+openMobileMenu: Opens the mobile menu.
+navigationHandler: Handles navigation to either the "Movies" or "TV Shows" page and closes the mobile menu.
+
+//carousel file:- 
+React and useRef: React is the core library for building the component-based user interface. useRef is used to create a reference to the DOM element representing the carousel container.
+
+React Icons: The BsFillArrowLeftCircleFill and BsFillArrowRightCircleFill icons from react-icons/bs are used to represent left and right navigation arrows for scrolling the carousel.
+
+React Router DOM: The useNavigate hook is used to handle navigation to different routes when an item in the carousel is clicked.
+
+React Redux (useSelector): useSelector is used to access data from the Redux store. It retrieves the url property from the home state, which might be used for constructing URLs for images or links.
+
+dayjs: dayjs is a library for parsing and formatting dates and times. It's used to format release dates in a more user-friendly format.
+
+Custom Components: Several custom components are imported:
+		ContentWrapper is a custom component that wraps the content of the carousel.
+		Img is a custom component used for lazy-loading images.
+		PosterFallback is an image that serves as a fallback in case a poster image is not available.
+		CircleRating is a custom component for displaying ratings in a circular format.
+        Genres is a custom component for displaying genre information
+The Carousel component receives several props:
+		data: An array of data representing items to be displayed in the carousel.
+		loading: A boolean indicating whether the data is still loading.
+		endpoint: A string representing the endpoint or type of content being displayed (e.g., "movie" or "tv").
+		title: An optional title to display above the carousel.
+
+/***Populat trending,topRated :- in this file the content are same
+data={data?.results} :- this is use for optional chaining
+ this means ki data ki value empty or undefined hogi to bhi error nhi aayega 
+ 
+//circleRating :-added 3 condition using ?: 
+
+//expolre:
+
+/****moviecard****/
+Props: The "MovieCard" component receives several props:
+		data: This parameter receives data for a multimedia item, such as a film or TV show.
+		fromSearch: A boolean parameter that indicates whether the card is from search results.
+		mediaType: It allows passing the type of multimedia item as a parameter (if provided by the user).
+
