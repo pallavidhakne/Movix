@@ -1,6 +1,6 @@
 ********************Movixx**************
 firstly we are using vite becuase vite is faster than reactjs 
-How faster ? 
+How faster? 
 Ans : Vite is a build tool and development server for front-end projects.
 React is a JavaScript library for building user interfaces. It is not a build tool or a development server like Vite.
 
@@ -13,29 +13,32 @@ export fetchDataFromApi, which is a function that takes two parameters:
 /*********/
 when we write code in React.StrictMode then everythings calls twice becuase it's checking ki pahili bar jo response aa rha tha agalibar bhi same aa rha ki nhi
 
-/*** Store folder ****/ in this folder we store all the code related to redux store
-//redux ko use krne ke liye hame react me 2 package chahiye hote hai 1.redux-toolkit 2.react-redux
-//store nam ke folder me redux ka code likh denge store.js file me and usako use kr lenge main file provider ke sath
+/*** Store folder ****/
+in this folder we store all the code related to redux store
+redux ko use krne ke liye hame react me 2 package chahiye hote hai 1.redux-toolkit 2.react-redux
+store nam ke folder me redux ka code likh denge store.js file me and usako use kr lenge main file provider ke sath
 <Provider store={store}>
         <App />
     </Provider> yese
+
 ///*****homeSlice*****/
 In the file homeSlice -> the code  is an example of using Redux Toolkit to define a Redux slice, which includes the state, reducers, 
 and actions for managing a specific portion of the Redux store.
 
 export const { getApiConfiguration, getGenres } = homeSlice.actions; :- exporting actions
 
-//read again api call and redux store wala kam
+read again api call and redux store wala kam
 
-//now start writing code gor making website 
-//why scss is better than css
-ans:SCSS consists of more advanced features, and thus, it can perform more advanced functions. 
+now start writing code gor making website 
+why scss is better than css
+ans: SCSS consists of more advanced features, and thus, it can perform more advanced functions. 
 A regular CSS language does not assign various nested rules. The SCSS language promotes rules that are properly nested
-contentWrapper :- we use contentWrapper for giving same kind of css to all element that's why we wrap all content in contentWrapper.
-HeroBanner:-welcome ,to big searchbar background image sabka code isame likha hai
+
+contentWrapper:- we use contentWrapper to give the same kind of css to all element that's why we wrap all content in contentWrapper.
+HeroBanner:-welcome,to the big searchbar background image sabka code isame likha hai
 we are write normal code for making these mentioned thing and use hook->useFetch for background
 
-we can;t direct access image url so we need to store it ,for build image url we need 3 -data
+we can't direct access image url so we need to store it , for build image url we need 3 -data
 (base url,size and file_path)
 
 ///Header file :-
